@@ -1,0 +1,23 @@
+{
+  "name": "schoep_project_webapp",
+  "version": "1.0.0",
+  "description": "This project is meant solely for the purpose of making a productivity-focused, student-focused calendar/notes app available online at any point.",
+  "main": "start.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuaschoep/schoep_project_webapp.git"
+  },
+  "author": "Josh Schoep",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshuaschoep/schoep_project_webapp/issues"
+  },
+  "homepage": "https://github.com/joshuaschoep/schoep_project_webapp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.20.0"
+  }
+}
