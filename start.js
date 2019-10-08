@@ -17,7 +17,7 @@ const HTTPSPORT = 443;
 
 const app = express();
 const httpapp = express();
-//const httpsServer = http.createServer(httpsOptions, app);
+const httpsServer = http.createServer(httpsOptions, app);
 const httpServer = http.createServer(httpapp);
 
 httpapp.use(function(request, response){
@@ -45,5 +45,5 @@ app.get('/', function(request, response){
     response.sendFile(__dirname + '/public/home.html')
 })
 
-app.listen(HTTPPORT);
-//httpapp.listen(HTTPPORT);
+httpsServer.listen(HTTPSPORT);
+httpServer.listen(HTTPPORT);
