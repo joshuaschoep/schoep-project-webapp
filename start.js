@@ -17,7 +17,7 @@ const HTTPSPORT = 443;
 
 const app = express();
 const httpapp = express();
-const httpsServer = http.createServer(app);
+//const httpsServer = http.createServer(httpsOptions, app);
 const httpServer = http.createServer(httpapp);
 
 httpapp.use(function(request, response){
@@ -38,6 +38,8 @@ for (route of routes) {
         })
     );
 }
+
+app.use(express.static('public'));
 
 app.get('/', function(request, response){
     response.sendFile(__dirname + '/public/home.html')
