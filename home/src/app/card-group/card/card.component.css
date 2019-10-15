@@ -1,0 +1,33 @@
+article{
+    display: block;
+    width: 480px;
+    height: 320px;
+    box-shadow: 8px 5px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+img.label{
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+section.body{
+    display: block;
+    padding: 8px;
+    background-color: #dcdcdc;
+    height: 130px;
+}
+
+h1{
+    font-size: 32px;
+    margin: 8px;
+}
+
+p{
+    height: 78px;
+    line-height: 1.5em;
+    font-size: 18px;
+    text-overflow: ellipsis;
+}
