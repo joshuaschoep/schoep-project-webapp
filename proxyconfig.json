@@ -1,8 +1,8 @@
 {
     "routes": [
       {
-        "route": "/javascript-game",
-        "address": "http://localhost:1001"
+        "route": "/blasteroids",
+        "address": "http://localhost:4451"
       },
       {
         "route": "/project2",
