@@ -39,10 +39,10 @@ for (route of routes) {
     );
 }
 
-app.use(express.static('public'));
+app.use(express.static('home/dist/home'));
 
 app.get('/', function(request, response){
-    response.sendFile(__dirname + '/public/home.html')
+    response.sendFile(__dirname + '/home/dist/home/index.html')
 })
 
 app.listen(HTTPPORT);

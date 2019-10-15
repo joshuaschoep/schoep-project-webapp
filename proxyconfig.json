@@ -1,7 +1,7 @@
 {
     "routes": [
       {
-        "route": "/project1",
+        "route": "/javascript-game",
         "address": "http://localhost:1001"
       },
       {
