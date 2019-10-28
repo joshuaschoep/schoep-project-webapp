@@ -41,6 +41,7 @@ header h2{
 }
 
 nav{
+    min-height: 6px;
     background-image: linear-gradient(to right, #6461a0, #314cb6);
     font-size: 12px;
     background-color: #888;

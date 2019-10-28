@@ -1,8 +1,11 @@
 article{
     padding: 50px;
+    overflow: hidden;
 }
 
 h1{
+    display: block;
+    width: 100%;
     font-size: 3rem;
     color: #222;
 }

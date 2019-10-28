@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApplicationsServiceService } from './applications-service.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'home';
+  application = {};
+
+  constructor(private apps: ApplicationsServiceService) {
+    this.showApps();
+  }
+
+  showApps(){
+    this.apps.getApplications()
+    .subscribe((data) => this.application = {
+      groups: data['groups']
+
+    });
+  }
+
+  public getApps(){
+    return this.application;
+  }
 }

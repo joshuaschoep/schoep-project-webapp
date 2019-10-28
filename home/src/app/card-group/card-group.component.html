@@ -1,6 +1,9 @@
 <article>
-    <h1>Personal</h1>
+    <h1>{{title}}</h1>
     <section>
-        <app-card></app-card>
+        <app-card 
+            *ngFor="let card of this.getContent()"
+            [content]="card">
+        </app-card>
     </section>
 </article>
