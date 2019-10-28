@@ -8,7 +8,9 @@ import { ApplicationsServiceService } from './applications-service.service';
 })
 export class AppComponent {
   title = 'home';
-  application = {};
+  application = {
+    groups: []
+  };
 
   constructor(private apps: ApplicationsServiceService) {
     this.showApps();
