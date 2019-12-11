@@ -51,3 +51,9 @@ app-root{
     overflow: hidden;
     min-height: 100vh;
 }
+
+@media screen and (max-width: 540px){
+    app-root{
+        background-color: #484848;
+    }
+}

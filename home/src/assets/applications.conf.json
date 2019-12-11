@@ -5,7 +5,7 @@
             "content": [
                 {
                     "name": "Blasteroids!",
-                    "image": "/assets/csci445-javascript-game.png",
+                    "image": "/assets/angular.png",
                     "description":  "This was a small javascript/jquery game I made for my web programming class. Have at it!",
                     "path": "/blasteroids"
                 },
@@ -13,6 +13,30 @@
                 {
                     "name": "Backend Projects",
                     "image": "/assets/http.png",
+                    "description": "This is for testing the web programming projects involving serving and working with PHP and Apache.",
+                    "path": "/backend"
+                }
+            ]
+        },
+        {
+            "name": "CSCI 470",
+            "content": [
+                {
+                    "name": "Fun stuff!",
+                    "image": "/assets/Logo.png",
+                    "description":  "This was a small javascript/jquery game I made for my web programming class. Have at it!",
+                    "path": "/blasteroids"
+                },
+        
+                {
+                    "name": "Backend Projects",
+                    "image": "/assets/karma.png",
+                    "description": "This is for testing the web programming projects involving serving and working with PHP and Apache.",
+                    "path": "/backend"
+                },
+                {
+                    "name": "Backend Projects",
+                    "image": "/assets/karma.png",
                     "description": "This is for testing the web programming projects involving serving and working with PHP and Apache.",
                     "path": "/backend"
                 }

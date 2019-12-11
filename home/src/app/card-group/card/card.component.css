@@ -35,3 +35,22 @@ p{
 a{
     color: #000;
 }
+
+@media screen and (max-width: 540px){
+    article{
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+
+    img.label{
+        object-fit: contain;
+        margin: auto;
+        max-height: 50vw;
+        width: 80vw;
+    }
+
+    section.body{
+        background-color: transparent;
+    }
+}
