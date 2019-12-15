@@ -1,8 +1,8 @@
 <app-header></app-header>
 <div class="content-wrap">
     <app-card-group 
-        *ngFor="let group of this.getApps().groups" 
+        *ngFor="let group of this.getGroups()" 
         [title]='group.name'
-        [content]='group.content'></app-card-group>
+        [id]='group.id'></app-card-group>
 </div>
 <app-footer></app-footer>

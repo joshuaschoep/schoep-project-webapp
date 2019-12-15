@@ -2,7 +2,7 @@
     <h1>{{title}}</h1>
     <section>
         <app-card 
-            *ngFor="let card of this.getContent()"
+            *ngFor="let card of this.getCards()"
             [content]="card">
         </app-card>
     </section>

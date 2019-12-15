@@ -8,23 +8,18 @@ import { ApplicationsServiceService } from './applications-service.service';
 })
 export class AppComponent {
   title = 'home';
-  application = {
-    groups: []
-  };
+  groups: Object;
 
   constructor(private apps: ApplicationsServiceService) {
-    this.showApps();
+    this.showGroups();
   }
 
-  showApps(){
-    this.apps.getApplications()
-    .subscribe((data) => this.application = {
-      groups: data['groups']
-
-    });
+  showGroups(){
+    this.apps.getGroups()
+    .subscribe((data) => this.groups = data);
   }
 
-  public getApps(){
-    return this.application;
+  public getGroups(){
+    return this.groups;
   }
 }

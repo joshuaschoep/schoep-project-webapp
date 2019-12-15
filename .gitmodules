@@ -1,7 +1,0 @@
-[submodule "csci445-javascript-game"]
-	path = csci445-javascript-game
-	url = https://github.com/joshuaschoep/csci445-javascript-game
-	branch = master
-[submodule "csci445-backend-projects"]
-	path = csci445-backend-projects
-	url = https://github.com/joshuaschoep/csci445-backend-projects
