@@ -48,11 +48,13 @@ a{
         width: 100%;
         height: auto;
         box-shadow: none;
+        border: none;
     }
 
     img.label{
         object-fit: contain;
         margin: auto;
+        object-fit: cover;
         max-height: 50vw;
         width: 80vw;
     }
