@@ -50,6 +50,7 @@ app-root{
     position: relative;
     overflow: hidden;
     min-height: 100vh;
+    background-color: #fff;
 }
 
 @media screen and (max-width: 540px){

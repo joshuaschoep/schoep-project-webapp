@@ -1,34 +1,41 @@
 article{
     display: block;
-    width: 480px;
-    height: 320px;
-    box-shadow: 8px 5px 5px rgba(0,0,0,0.2);
+    background-color: #fff;
+    width: 25em;
+    height: 20em;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 6px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.4);
     overflow: hidden;
 }
 
 img.label{
+    text-align: center;
+    color: #fff;
+    background-color: #999;
     object-fit: cover;
     padding: 0px;
     margin: 0px;
     display: block;
+    height: 10em;
 }
 
 section.body{
     display: block;
     padding: 8px;
-    background-color: #dcdcdc;
-    height: 130px;
 }
 
 h1{
-    font-size: 32px;
+    font-size: 1.5em;
+    font-weight: bold;
     margin: 8px;
 }
 
 p{
-    height: 78px;
+    padding-top: 1.1em;
+    color: #333;
     line-height: 1.5em;
-    font-size: 18px;
+    font-size: 1.1em;
     text-overflow: ellipsis;
 }
 
