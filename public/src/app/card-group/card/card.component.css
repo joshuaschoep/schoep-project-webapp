@@ -12,11 +12,12 @@ article{
 img.label{
     text-align: center;
     color: #333;
-    object-fit: cover;
+    object-fit: contain;
     padding: 0px;
     margin: 0px;
     display: block;
     height: 10em;
+    width: 100%
 }
 
 section.body{
