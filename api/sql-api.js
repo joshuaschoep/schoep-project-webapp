@@ -1,7 +1,7 @@
 const mysql = require('mysql');
 const fs = require('fs');
 
-MYSQL_CONFIG_PATH = '/home/ubuntu/.config/mysql.conf.json';
+MYSQL_CONFIG_PATH = 'C:/Users/Josh/.config/mysql.conf.json';
 
 const pool = mysql.createPool(
 	JSON.parse(fs.readFileSync(MYSQL_CONFIG_PATH))
