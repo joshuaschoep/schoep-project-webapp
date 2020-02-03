@@ -1,3 +1,5 @@
 # schoep_project_webapp
 
-This project is meant to be a digital resume for use by me (and in the future, possibly other users), to display all my projects over my computer science career. The landing page acts as a responsive and proactive reverse proxy to hosts for all my other projects.
+This project is meant solely for the purpose of making a productivity-focused, student-focused calendar/notes app available online at any point.
+
+It may go somewhere, it may not. We have fun, though :)
