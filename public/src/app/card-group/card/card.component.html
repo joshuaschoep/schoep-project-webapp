@@ -1,9 +1,10 @@
-<a href="{{content.link_path}}">
-<article>
-    <img class="label" src="{{content.image_path}}" alt="Banner not found">
-    <section class="body">
-        <h1>{{content.title}}</h1>
+<mat-card>
+    <mat-card-title>{{content.title}}</mat-card-title>
+    <img mat-card-image src="{{content.image_path}}" alt="Banner not found">
+    <mat-card-content>
             <p>{{content.description}}</p>        
-    </section>
-</article>
-</a>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-button href="{{content.link_path}}" color="primary">CHECK IT OUT</a>
+    </mat-card-actions>
+</mat-card>

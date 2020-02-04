@@ -1,0 +1,56 @@
+mat-toolbar{
+    display: flex;
+    box-sizing: border-box;
+
+    img{
+        width: 2.3em;
+    }
+
+    span.title{
+        margin: auto;
+        overflow: hidden;
+
+        img{
+            float: left;
+            margin-right: 0.6em;
+        }
+
+        h1{
+            float: right;
+            line-height: 2.3em;
+            vertical-align: middle;
+        }
+    }
+}
+
+mat-sidenav-container{
+    width: 100%;
+    min-height: 100vh;
+
+    mat-sidenav{
+        min-width: 20rem;
+    
+        a div{
+            text-align: center;
+        }
+    }
+
+    mat-sidenav-content{
+        min-height: 100vh;
+    }
+}
+
+app-footer{
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+@media screen and (max-width: 720px){
+    app-footer{
+        position: relative;
+    }
+}

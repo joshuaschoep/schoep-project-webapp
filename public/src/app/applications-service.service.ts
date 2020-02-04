@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { find } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -17,8 +18,11 @@ export class ApplicationsServiceService {
     return this.http.get(this.groupsUrl);
   }
 
+  retrieveTitle(id: number){
+    return this.http.get(this.groupsUrl).pipe(find(value => value['id'] == id));   
+  }
+
   getCards(group: number){
-    console.log(this.cardsUrl(group));
     return this.http.get(this.cardsUrl(group));
   }
 }

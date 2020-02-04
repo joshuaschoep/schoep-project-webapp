@@ -1,6 +1,6 @@
 footer{
     display: block;
-    width: 100vw;
+    width: 100%;
     background-color: #484848;
     color: #fff;
     text-align: center;
@@ -15,6 +15,8 @@ footer div{
 }
 
 h4{
+    font-size: 1em;
+    font-weight: normal;
     padding: 5px;
 }
 
@@ -27,9 +29,6 @@ table img{
 }
 
 @media screen and (max-width: 540px){
-    footer{
-        background-color: transparent;
-    }
 
     footer div{
         display: block;

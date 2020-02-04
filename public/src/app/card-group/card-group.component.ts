@@ -1,22 +1,28 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ApplicationsServiceService } from '../applications-service.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-card-group',
   templateUrl: './card-group.component.html',
-  styleUrls: ['./card-group.component.css'],
+  styleUrls: ['./card-group.component.scss'],
 })
 export class CardGroupComponent implements OnInit {
-  @Input() title: String;
-  @Input() id;
   cards: Object;
+  id: number;
+  title: string;
 
-  constructor(private apps: ApplicationsServiceService) {
-    
+  constructor(
+    private apps: ApplicationsServiceService,
+    private route: ActivatedRoute)
+  {
+    this.id = parseInt(this.route.snapshot.paramMap.get('id'));
   }
 
-  ngOnInit() { 
+  ngOnInit() {
+    this.apps.retrieveTitle(this.id).subscribe(x => this.title = <string>x);
     this.showCards();
+    console.log(this.title);
   }
 
   showCards(){
@@ -25,7 +31,6 @@ export class CardGroupComponent implements OnInit {
   }
 
   public getCards(){
-    console.log(this.cards);
     return this.cards;
   }
 

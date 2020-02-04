@@ -1,8 +1,30 @@
-<app-header></app-header>
-<div class="content-wrap">
-    <app-card-group 
-        *ngFor="let group of this.getGroups()" 
-        [title]='group.name'
-        [id]='group.id'></app-card-group>
-</div>
-<app-footer></app-footer>
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span class="title">
+        <a href="https://schoepproject.com">
+            <img src="assets/Logo.png">
+        </a>
+        <h1 title>The Project</h1>
+    </span>
+    <a mat-icon-button>
+        <mat-icon>account_circle</mat-icon>
+    </a>
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+        <mat-nav-list>
+            <h3 mat-subheader>Personal</h3>
+            <a mat-list-item href="/p/0">Website</a>
+            <a mat-list-item ref="/p/-1">Other</a>
+            <mat-divider></mat-divider>
+            <h3 mat-subheader>Courses</h3>
+            <a mat-list-item *ngFor="let group of getGroups()" href="/p/{{group.id}}">{{ group.name }}</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>
