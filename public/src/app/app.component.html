@@ -16,11 +16,11 @@
     <mat-sidenav #sidenav>
         <mat-nav-list>
             <h3 mat-subheader>Personal</h3>
-            <a mat-list-item href="/p/0">Website</a>
-            <a mat-list-item ref="/p/-1">Other</a>
+            <a mat-list-item routerLink="/p/0">Website</a>
+            <a mat-list-item routerLink="/p/-1">Other</a>
             <mat-divider></mat-divider>
             <h3 mat-subheader>Courses</h3>
-            <a mat-list-item *ngFor="let group of getGroups()" href="/p/{{group.id}}">{{ group.name }}</a>
+            <a mat-list-item *ngFor="let group of getGroups()" [routerLink]="['/p', group.id]">{{ group.name }}</a>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
