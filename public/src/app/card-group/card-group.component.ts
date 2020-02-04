@@ -17,6 +17,7 @@ export class CardGroupComponent implements OnInit {
     private route: ActivatedRoute)
   {
     this.id = parseInt(this.route.snapshot.paramMap.get('id'));
+    this.route.paramMap.subscribe(this.updateFromUrl.bind(this));
   }
 
   ngOnInit() {
@@ -32,6 +33,11 @@ export class CardGroupComponent implements OnInit {
 
   public getCards(){
     return this.cards;
+  }
+
+  private updateFromUrl(paramMap){
+    this.id = parseInt(paramMap.get('id'));
+    this.showCards();
   }
 
 }
