@@ -2,7 +2,7 @@ const express = require('express');
 const db = require('./sql-api');
 
 const app = express();
-const SERVICE_PORT = 3000;
+const SERVICE_PORT = 3500;
 
 app.get('/groups', (req, res) => {
     db.get_applications((results) => {
