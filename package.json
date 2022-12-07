@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/joshuaschoep/schoep_project_webapp#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "http-proxy-middleware": "^0.20.0",
     "mysql": "^2.17.1"
   }
